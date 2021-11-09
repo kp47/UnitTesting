@@ -11,7 +11,7 @@ import styles from './styles';
 
 const Login = () => {
   const dispatch = useDispatch();
-  const [error, setError] = useState(false);
+  const [error, setError] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -20,8 +20,11 @@ const Login = () => {
   // const loader: any = useSelector(isLoading);
 
   useEffect(() => {
-    LoginScreenListError && alert('Error') && setError(true);
-    token && alert(token?.token);
+    LoginScreenListError && setError('Username & Password do not match.');
+    if (token) {
+      console.log('token', token?.token);
+      setError('');
+    }
   }, [LoginScreenListError, token]);
 
   const validate = () => {
@@ -40,20 +43,21 @@ const Login = () => {
           source={require('../../images/react_native.png')}
           style={styles.images}
         />
-        {error && (
-          <Text style={[styles.login, styles.errorColor]}>
-            {'Username & Password do not match.'}
-          </Text>
-        )}
+
+        <Text testID={'errorMessage'} style={[styles.login, styles.errorColor]}>
+          {error}
+        </Text>
       </View>
       <View style={styles.form}>
         <TextInput
+          testID={'userName'}
           style={styles.inputFormItems}
           placeholder="Email "
           onChangeText={text => setEmail(text)}
           value={email}
         />
         <TextInput
+          testID={'password'}
           style={styles.inputFormItems}
           placeholder="Password "
           secureTextEntry={true}
@@ -65,7 +69,10 @@ const Login = () => {
             {'Forgot Password?'}
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => validate()} style={styles.register}>
+        <TouchableOpacity
+          testID={'login'}
+          onPress={() => validate()}
+          style={styles.register}>
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>
       </View>

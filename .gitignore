@@ -239,3 +239,6 @@ buck-out/
 \.buckd/
 android/app/libs
 android/keystores/debug.keystore
+android/local.properties
+yarn.lock
+yarn.lock

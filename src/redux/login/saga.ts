@@ -16,9 +16,9 @@ function* getLoginResponse({
     console.log(JSON.stringify(response));
     yield put(actionCreators.getLoginScreenSuccess(response.data));
   } catch (error) {
-    console.log('errorResponseLogin', JSON.stringify(error));
+    // console.log('errorResponseLogin', JSON.stringify(error));
 
-    yield put(actionCreators.getLoginScreenError(error?.response));
+    yield put(actionCreators.getLoginScreenError(error));
   }
 }
 

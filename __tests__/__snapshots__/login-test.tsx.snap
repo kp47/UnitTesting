@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Screen page test Check to see if renders properly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "height": "45%",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/react_native.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 200,
+          "width": 200,
+        }
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "color": "#3590e6",
+            "fontWeight": "600",
+            "marginTop": 20,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+      testID="errorMessage"
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Email "
+      style={
+        Object {
+          "borderColor": "#39c6ed",
+          "borderWidth": 0.5,
+          "fontSize": 18,
+          "marginHorizontal": 30,
+          "marginTop": 10,
+          "padding": 10,
+        }
+      }
+      testID="userName"
+      value=""
+    />
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Password "
+      secureTextEntry={true}
+      style={
+        Object {
+          "borderColor": "#39c6ed",
+          "borderWidth": 0.5,
+          "fontSize": 18,
+          "marginHorizontal": 30,
+          "marginTop": 10,
+          "padding": 10,
+        }
+      }
+      testID="password"
+      value=""
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#3590e6",
+              "fontWeight": "600",
+              "marginTop": 20,
+            },
+            Object {
+              "alignSelf": "flex-end",
+              "marginRight": 30,
+            },
+          ]
+        }
+      >
+        Forgot Password?
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#55f2dd",
+          "borderRadius": 5,
+          "height": 50,
+          "marginHorizontal": 40,
+          "marginTop": 30,
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "width": "85%",
+        }
+      }
+      testID="login"
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Login
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/images/facebook.png",
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "marginTop": 30,
+            "paddingBottom": 5,
+            "paddingTop": 10,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/images/google.png",
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "marginTop": 30,
+            "paddingBottom": 5,
+            "paddingTop": 10,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/images/twitter.png",
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "marginTop": 30,
+            "paddingBottom": 5,
+            "paddingTop": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#3590e6",
+          "fontWeight": "600",
+          "marginTop": 20,
+        }
+      }
+    >
+      Don't have an account?
+      <Text
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+         Register
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
