@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
   },
@@ -63,3 +63,5 @@ export default StyleSheet.create({
   errorColor: {color: 'red'},
   boldText: {fontWeight: 'bold'},
 });
+
+export default styles;

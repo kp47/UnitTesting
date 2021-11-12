@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios';
 import * as actionTypes from '../../types';
 
-export const GET_LOGIN_SCREEN_REQUEST = 'GET_LOGIN_SCREEN_REQUEST ';
+export const GET_LOGIN_SCREEN_REQUEST = 'GET_LOGIN_SCREEN_REQUEST';
 export const GET_LOGIN_SCREEN_SUCCESS = 'GET_LOGIN_SCREEN_SUCCESS';
 export const GET_LOGIN_SCREEN_ERROR = ' GET_LOGIN_SCREEN_ERROR';
 
