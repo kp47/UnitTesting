@@ -34,6 +34,22 @@ exports[`Login Screen page test Check to see if renders properly 1`] = `
             "fontWeight": "600",
             "marginTop": 20,
           },
+        ]
+      }
+      testID="name"
+    >
+      Welcome 
+      Kunal
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "color": "#3590e6",
+            "fontWeight": "600",
+            "marginTop": 20,
+          },
           Object {
             "color": "red",
           },

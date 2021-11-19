@@ -14,6 +14,15 @@ import {
 import loginReducer from '../src/redux/login/reducer';
 import Login from '../src/screens/Login/login';
 
+jest.mock('@react-navigation/native', () => ({
+  ...jest.requireActual('@react-navigation/native'),
+  useRoute: () => ({
+    params: {
+      name: 'Kunal',
+    },
+  }),
+}));
+
 describe('Login Screen page test', () => {
   test('Check to see if renders properly', async () => {
     const component = (
@@ -25,6 +34,8 @@ describe('Login Screen page test', () => {
     const wrapper = render(component);
     expect(wrapper).toBeTruthy();
     expect(wrapper.toJSON()).toMatchSnapshot();
+
+    expect(wrapper.getByText('Welcome Kunal')).toBeTruthy();
 
     const textToEnter = 'InvalidUsername';
     // const textToEnter = 'eve.holt@reqres.in';

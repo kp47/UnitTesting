@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/react-native": "^8.0.0",
     "@types/jest": "^27.0.2",
@@ -17,6 +19,8 @@
     "axios": "^0.24.0",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.9.0",
     "react-redux": "^7.2.6",
     "redux-saga": "^1.1.3"
   },

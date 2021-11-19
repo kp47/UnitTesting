@@ -13,6 +13,8 @@ target 'UnitTestingSample' do
     :hermes_enabled => false
   )
 
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
   target 'UnitTestingSampleTests' do
     inherit! :complete
     # Pods for testing

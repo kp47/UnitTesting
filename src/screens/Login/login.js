@@ -1,3 +1,4 @@
+import {useRoute} from '@react-navigation/native';
 import React, {useEffect, useState} from 'react';
 import {Image, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
@@ -10,6 +11,8 @@ import {
 import styles from './styles';
 
 const Login = () => {
+  const route = useRoute();
+  const {name} = route.params;
   const dispatch = useDispatch();
   const [error, setError] = useState('');
   const [email, setEmail] = useState('');
@@ -43,7 +46,9 @@ const Login = () => {
           source={require('../../images/react_native.png')}
           style={styles.images}
         />
-
+        <Text testID={'name'} style={[styles.login]}>
+          Welcome {name}
+        </Text>
         <Text testID={'errorMessage'} style={[styles.login, styles.errorColor]}>
           {error}
         </Text>
